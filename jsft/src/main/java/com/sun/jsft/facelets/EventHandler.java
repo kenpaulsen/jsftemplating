@@ -270,10 +270,10 @@ public class EventHandler extends TagHandler {
 			ajaxBehavior.removeAjaxBehaviorListener(listener);
 			ajaxBehavior.addAjaxBehaviorListener(listener);
 			found = true;
-		    } else if (behave instanceof org.primefaces.component.behavior.ajax.AjaxBehavior) {
+		    } else if (behave instanceof org.primefaces.behavior.ajax.AjaxBehavior) {
 			// Add AjaxBehaviorListener to the PF AjaxBehavior
-			org.primefaces.component.behavior.ajax.AjaxBehavior pfAjaxBehave = 
-				(org.primefaces.component.behavior.ajax.AjaxBehavior) behave;
+			org.primefaces.behavior.ajax.AjaxBehavior pfAjaxBehave = 
+				(org.primefaces.behavior.ajax.AjaxBehavior) behave;
 			PFAjaxBehaviorEventListener listener =
 				new PFAjaxBehaviorEventListener(entry.getKey());
 			// Remove first, then re-add (to be safe not to add it 2x)

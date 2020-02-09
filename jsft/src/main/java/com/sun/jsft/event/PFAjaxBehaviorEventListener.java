@@ -5,7 +5,7 @@ import java.util.Map;
 import javax.faces.event.AbortProcessingException;
 import javax.faces.event.AjaxBehaviorEvent;
 
-import org.primefaces.component.behavior.ajax.AjaxBehaviorListenerImpl;
+import org.primefaces.behavior.ajax.AjaxBehaviorListenerImpl;
 
 
 /**
